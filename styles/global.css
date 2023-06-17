@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.overlay img:hover {
+    -webkit-filter: brightness(60%);
+}
+
+
+.overlayText {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.overlay:hover .overlayText {
+    opacity: 1;
+}
+
+.pink__gradient {
+    background: linear-gradient(90deg, #f4c4f3 0%, #d03dce 100%);
+    filter: blur(900px);
+  }
